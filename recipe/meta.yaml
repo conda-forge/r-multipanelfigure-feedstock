@@ -1,4 +1,4 @@
-{% set version = '0.10.6' %}
+{% set version = "0.10.7" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/multipanelfigure_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/multipanelfigure/multipanelfigure_{{ version }}.tar.gz
-  sha256: 037a447bbcdce331fb0a2fa69f4857e505ef1136b9bfea831b6a79bbac72a3ec
+  sha256: 30101de914811f69b0a17e2866215535a6eef9fa7693a1c437dffb559594f71c
 
 build:
   skip: True  # [win or osx]
@@ -32,7 +32,7 @@ requirements:
     - r-assertive.types >=0.0_3
     - r-catools >=1.17.1
     - r-ggplot2 >=2.2.1
-    - r-gridgraphics >=0.2
+    - r-gridgraphics >=0.2_1
     - r-gtable >=0.2.0
     - r-jpeg >=0.1_8
     - r-magrittr >=1.5
