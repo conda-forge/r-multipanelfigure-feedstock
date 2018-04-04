@@ -32,7 +32,7 @@ requirements:
     - r-assertive.types >=0.0_3
     - r-catools >=1.17.1
     - r-ggplot2 >=2.2.1
-    - r-gridgraphics >=0.2
+    - r-gridgraphics >=0.2_1
     - r-gtable >=0.2.0
     - r-jpeg >=0.1_8
     - r-magrittr >=1.5
