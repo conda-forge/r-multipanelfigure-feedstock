@@ -1,4 +1,4 @@
-{% set version = "0.10.7" %}
+{% set version = "1.0.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/multipanelfigure_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/multipanelfigure/multipanelfigure_{{ version }}.tar.gz
-  sha256: 30101de914811f69b0a17e2866215535a6eef9fa7693a1c437dffb559594f71c
+  sha256: faadf5ca4dfc1f1975bb7df2bc9bf1679a6166fcbfc2fe5b58cbf337daf87c23
 
 build:
   skip: True  # [win or osx]
