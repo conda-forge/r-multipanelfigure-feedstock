@@ -38,7 +38,6 @@ requirements:
     - r-stringi >=1.2.3
   run:
     - r-base
-    - libgfortran-ng             # [not win]
     - r-assertive.base >=0.0_7
     - r-assertive.files >=0.0_2
     - r-assertive.numbers >=0.0_2
