@@ -1,4 +1,4 @@
-{% set version = '2.0.2' %}
+{% set version = "2.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/multipanelfigure_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/multipanelfigure/multipanelfigure_{{ version }}.tar.gz
-  sha256: 47b04774f10ce11d57298af76b7e2e7c27545ccfa815131b63c99bae2b584438
+  sha256: e0ba8a6b428ea2acdc129d4bd615eb83069edc767f966f5548cdc54758ecfeef
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -58,11 +58,10 @@ test:
 about:
   home: https://CRAN.R-project.org/package=multipanelfigure
   license: GPL (>= 3)
-  summary: Tools to create a layout for figures made of multiple panels, and to fill the panels
-    with base, 'lattice', 'ggplot2' and 'ComplexHeatmap' plots, grobs, as well as content
-    from all image formats supported by 'ImageMagick' (accessed through 'magick').
+  summary: Tools to create a layout for figures made of multiple panels, and to fill the panels with base, 'lattice', 'ggplot2' and 'ComplexHeatmap' plots, grobs,
+    as well as content from all image formats supported by 'ImageMagick' (accessed through 'magick').
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
