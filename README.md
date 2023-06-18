@@ -1,11 +1,11 @@
-About r-multipanelfigure
-========================
+About r-multipanelfigure-feedstock
+==================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-multipanelfigure-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=multipanelfigure
 
 Package license: GPL (>= 3)
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-multipanelfigure-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tools to create a layout for figures made of multiple panels, and to fill the panels with base, 'lattice', 'ggplot2' and 'ComplexHeatmap' plots, grobs, as well as content from all image formats supported by 'ImageMagick' (accessed through 'magick').
 
